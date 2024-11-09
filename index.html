@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Life Living Certificate Fundraiser</title>
   <style>
-    /* Basic Reset */
+    /* Reset */
     * {
       margin: 0;
       padding: 0;
@@ -20,22 +20,25 @@
       padding: 20px;
       display: flex;
       justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
 
     /* Container */
     .container {
       max-width: 800px;
-      margin: 0 auto;
+      width: 100%;
       padding: 20px;
       background-color: #ffffff;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
     }
 
     /* Header */
     header {
       text-align: center;
-      padding: 20px 0;
+      padding: 20px;
       background-color: #4b6584;
       color: #ffffff;
       border-radius: 10px 10px 0 0;
@@ -43,12 +46,11 @@
 
     header h1 {
       font-size: 2.5rem;
-      margin-bottom: 10px;
+      margin-bottom: 0.5em;
     }
 
     header p {
       font-size: 1.2rem;
-      margin-top: 10px;
     }
 
     /* Section Titles */
@@ -56,6 +58,7 @@
       color: #3867d6;
       font-size: 1.8rem;
       margin-top: 20px;
+      margin-bottom: 10px;
       border-bottom: 3px solid #3867d6;
       display: inline-block;
       padding-bottom: 5px;
@@ -70,11 +73,8 @@
 
     /* Button Styling */
     .donate-btn {
-      display: block;
-      width: 100%;
-      max-width: 200px;
-      margin: 20px auto;
-      padding: 15px;
+      display: inline-block;
+      padding: 15px 25px;
       text-align: center;
       background-color: #fc5c65;
       color: white;
@@ -83,28 +83,12 @@
       border-radius: 5px;
       transition: background-color 0.3s ease;
       box-shadow: 0 4px 8px rgba(252, 92, 101, 0.3);
+      margin: 20px 0;
     }
 
     .donate-btn:hover {
       background-color: #eb3b5a;
       box-shadow: 0 6px 12px rgba(235, 59, 90, 0.3);
-    }
-
-    /* QR Code Styling */
-    .qr-code-section {
-      text-align: center;
-      margin: 20px 0;
-      padding: 20px;
-      background-color: #d1d8e0;
-      border-radius: 10px;
-    }
-
-    .qr-code-section img {
-      max-width: 200px;
-      margin-top: 10px;
-      border: 5px solid #4b6584;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
     /* Footer */
@@ -113,8 +97,25 @@
       padding: 10px;
       font-size: 0.9rem;
       color: #4b6584;
-      margin-top: 20px;
       border-top: 1px solid #d1d8e0;
+      margin-top: 20px;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header p,
+      p {
+        font-size: 0.95rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      .donate-btn {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
@@ -129,36 +130,29 @@
     <!-- Main Content Section -->
     <section>
       <h2>About the Life Living Certificate</h2>
-      <p>This allows you to monetize your body without relying on traditional methods of work. Typically, we use our physical energy to perform tasks for other people’s companies in order to sustain the existence of a dead body/corpse corporation. However, we have devoted our time, energy, resources, and, unfortunately, our entire existence to relying on them for survival. But why should it be that difficult when, first and foremost, there technically is no money. The creation of this so-called money is accomplished by our signature and energy.</p>
-      <p>Moreover, with the rise of AI technology, most laborious and menial tasks will be replaced. Therefore, monetizing our signature should be the only true work we focus on.</p>
+      <p>The Life Living Certificate allows you to monetize your body without relying on traditional methods of work. Typically, we use our physical energy to perform tasks for other people’s companies to sustain a corporate existence. We have devoted our time, energy, and resources to depending on these structures for survival.</p>
+      <p>With the rise of AI technology, many menial tasks will be replaced. Therefore, monetizing our signature should be the only true work we focus on.</p>
 
       <h2>How It Works</h2>
-      <p>This will be accomplished using our proprietary methods, coupled with the dynamic power of contracts. With this approach, you sell the rights to your physical body, and those rights are transformed into a private bond/stock that will be traded on the open market alongside other participants in an ETF structure. A priceless asset-backed security!</p>
-      <p>All proceeds will belong to the living, breathing individual. It will be in a private trust form with you as both the trustee and beneficiary, giving you both the fiduciary duty to see the trust grow and the ability to actively receive benefits on behalf of the work you do for yourself. If your body is involved in any kind of trouble, they must first answer to the rightful owner, which is the trust.</p>
+      <p>This program will use proprietary methods and contracts. By selling the rights to your physical body, these rights are transformed into a private bond/stock traded on the open market alongside other participants in an ETF structure—creating a priceless asset-backed security.</p>
+      <p>All proceeds will belong to the individual, held in a private trust where you serve as both trustee and beneficiary, giving you full control and the right to benefit from your work.</p>
 
       <h2>Investor Protection Clause</h2>
-      <p>You will also have a clause protecting you from any investors who want the actual property, similar to gold certificates. However, there are certain limitations. For example, if you are involved in any violent crimes against another living, breathing individual, the protective clause will be lifted, and you will be subject to the jurisdiction where the crime was committed. Your contract will become null and void as you violated the terms and conditions. It’s an open and voluntary process/contract with no hidden agenda and total transparency.</p>
+      <p>Our clause protects you from any investors attempting to claim actual property rights over your body. In case of any violent actions against another individual, however, the protective clause will be lifted, and local jurisdiction will apply.</p>
+      <p>This process is open, voluntary, and transparent.</p>
 
       <h2>Flexible Leasing Options</h2>
-      <p>Additionally, it will operate under a leasing structure of 2, 5, or 10 years. An initial investment of $200k for 2 years, $500k for 5 years, or $1M for 10 years is provided, followed by a monthly dividend check based on market performance. The maximum amount is sufficient for you to comfortably live, allowing you to buy a house and a car. By freeing up your time, you will have the opportunity to research and find the right investment vehicles for compounded passive income streams. You can use these assets to access more credit and invest in other lucrative opportunities or even pair it with an Index Universal Life Insurance policy, if you choose. This is just one idea among many, and the monthly dividends will be more than enough to cover food and utilities.</p>
-      <p>You are free to do as you choose with the initial funds, but by responsibly reinvesting in your contract, you will compound the monthly dividends. This will make it more attractive to investors, which will continue to increase its value. On this platform, Bitcoin will be the base form of currency and store of value because it is permissionless and not controlled by any central authority. However, participants will be able to choose which currency they want to be paid in. Ultimately, you will always have the final say, and by formulating your Life Living Certificate/Body Rights Contract, it will be valuable even after the lease expires. You will be able to show where it was valued as property, and now you have the highest title in said property. You in essence are not your body it is only a vehicle in which the soul abides in for a certain amount of time.</p>
+      <p>Options include a 2-year lease at $200k, 5 years at $500k, or 10 years at $1M, with monthly dividends based on market performance. The funds provide you with the freedom to live comfortably and pursue investments for additional passive income.</p>
+      <p>You have complete freedom over the funds. Responsible reinvestment in your contract will help compound dividends and increase value for both yourself and potential investors.</p>
 
       <h2>Why a Life Living Certificate?</h2>
-      <p>This is the secret of how people in the entertainment industry "sell their soul," which is essentially just them giving away the rights to their body via a contract. The soul is eternal. It’s like a reverse mortgage on your body. But consider how much more valuable a body is than a house, a vehicle, diamonds, platinum, or even gold. And those things that we give the value to are all made for and by people. A house is made by bodies to house bodies; a car is made by bodies to transport bodies; gold is mined by bodies to power the technology that bodies use. Yet, the value of the actual bodies are immensely overlooked, and its value is priceless!</p>
+      <p>Consider the value of a body, which enables the creation of all worldly assets, yet is often overlooked in value. Our approach recognizes your inherent worth, empowering you to leverage it responsibly.</p>
 
       <h2>Donation Offer</h2>
-      <p>For a limited time, during this private fundraising stage you will receive a private trust template that will be used in conjunction with this program. This private trust is essential and can be also utilized now for protecting your assets or even used for establishing a unincorporated business. This document alone is easily worth 500$ but for a donation of or above 49.99 you will receive the trust template and you will be placed on the waitlist in a first in time first in line basis for both participants and investors.</p>
+      <p>For a limited time, a donation of $49.99 or above will grant you a private trust template essential for protecting your assets or establishing an unincorporated business.</p>
 
       <!-- Call-to-action Button -->
       <a href="https://www.indiegogo.com/projects/[your-campaign-id]" target="_blank" class="donate-btn">Donate Now</a>
-
-      <!-- Bitcoin QR Code Donation Section -->
-      <div class="qr-code-section">
-        <h2>Bitcoin Donations</h2>
-        <p>Scan the QR code below to donate in Bitcoin:</p>
-        <img src="bitcoin-qr.png" alt="Bitcoin QR Code">
-        <p><strong>Bitcoin Address:</strong> [bc1q5zx9cpxq9yk9fplqzmygwp5956km6rf9usvyrz]</p>
-      </div>
     </section>
   </div>
 
